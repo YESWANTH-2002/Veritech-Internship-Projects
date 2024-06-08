@@ -1,0 +1,153 @@
+/* styles.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('Background.png') no-repeat center center/cover;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    max-width: 800px;
+    min-width: 300px;
+    max-height: 90vh; /* Updated to make the container scrollable */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.todo-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.todo-input input {
+    width: 75%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.todo-input button {
+    padding: 10px;
+    border: none;
+    background: #5cb85c;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.todo-input button:hover {
+    background: #4cae4c;
+}
+
+.progress-container {
+    width: 100%;
+    background: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    height: 20px;
+    width: 0;
+    background: #5cb85c;
+    transition: width 0.3s;
+}
+
+#todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.todo-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.todo-item.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.todo-item.partially-completed {
+    color: #ff9800;
+}
+
+.todo-item.not-completed {
+    color: #f44336;
+}
+
+.todo-buttons button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.edit {
+    background: #5bc0de;
+    color: white;
+}
+
+.delete {
+    background: #d9534f;
+    color: white;
+}
+
+.complete {
+    background: #5cb85c;
+    color: white;
+}
+
+.partial {
+    background: #f0ad4e;
+    color: white;
+}
+
+.not-complete {
+    background: #d9534f;
+    color: white;
+}
+
+.serial-number {
+    width: 30px;
+    display: inline-block;
+}
+
+.todo-item.dragging {
+    opacity: 0.5;
+}
