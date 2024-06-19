@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="https://www.amazon.in/ref=nav_logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo" class="logo">
+            </a>
+            <div class="nav-location">
+                <span>Deliver to</span>
+                <strong>Salem 636006</strong>
+            </div>
+        </div>
+        <div class="nav-middle">
+            <input type="text" placeholder="Search Amazon.in">
+            <button type="submit">Search</button>
+        </div>
+        <div class="nav-right">
+            <div class="dropdown">
+                <button class="dropbtn">Account & Lists</button>
+                <div class="dropdown-content">
+                    <a href="#">Sign In</a>
+                    <a href="#">Your Account</a>
+                    <a href="#">Orders</a>
+                </div>
+            </div>
+            <a href="#">Returns & Orders</a>
+            <a href="#" class="cart">
+                Cart <span class="cart-count">0</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Banner -->
+    <section class="main-banner">
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+
+                <div class="slide first">
+                    <img src="banner_1.jpg" alt="Banner 1">
+                </div>
+                <div class="slide">
+                    <img src="banner_2.jpg" alt="Banner 2">
+                </div>
+                <div class="slide">
+                    <img src="banner_3.jpg" alt="Banner 3">
+                </div>
+                <div class="slide">
+                    <img src="banner_4.jpg" alt="Banner 4">
+                </div>
+
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+            </div>
+
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Sections -->
+    <section class="content">
+        <div class="content-box">
+            <h2>Appliances for your home | Up to 55% off</h2>
+            <div class="content-items">
+                <div class="content-item">
+                    <img src="Airconditioner.jpg" alt="Air Conditioners">
+                    <p>Air Conditioners</p>
+                </div>
+                <div class="content-item">
+                    <img src="fridge.jpg" alt="Refrigerators">
+                    <p>Refrigerators</p>
+                </div>
+                <div class="content-item">
+                    <img src="oven.jpg" alt="Microwaves">
+                    <p>Microwaves</p>
+                </div>
+                <div class="content-item">
+                    <img src="washing_machine.jpg" alt="Washing Machines">
+                    <p>Washing Machines</p>
+                </div>
+            </div>
+            <a href="#">See more</a>
+        </div>
+        
+    </section>
+</body>
+</html>
